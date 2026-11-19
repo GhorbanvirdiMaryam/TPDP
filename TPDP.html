@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TPDP 2025 · Maryam Ghorbanvirdi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #dbe4df;
+    --card: #ffffff;
+    --text: #26312c;
+    --muted: #5f6d66;
+    --teal: #507882;
+    --teal-bright: #35606d;
+    --sage: #6f8a6b;
+    --peach: #edd7c8;
+    --serif: "Spectral", Georgia, serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 64px; }
+  .back {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--teal-bright);
+    text-decoration: none;
+  }
+  .back:hover { text-decoration: underline; }
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+    margin-top: 18px;
+  }
+  .photo { display: block; min-height: 100%; }
+  .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    box-shadow: 0 12px 34px rgba(38, 49, 44, 0.18);
+  }
+  .story {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 2px 10px rgba(38, 49, 44, 0.06);
+    border-left: 4px solid var(--peach);
+  }
+  .event {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 36px; line-height: 1.15; margin: 0 0 8px; color: var(--teal-bright); }
+  .subtitle { font-size: 18px; color: var(--muted); margin: 0 0 20px; font-style: italic; }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 28px;
+    margin-top: 22px;
+    box-shadow: 0 2px 10px rgba(38, 49, 44, 0.06);
+  }
+  .stamp {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--teal);
+    margin: 0 0 12px;
+  }
+  .story p.text { font-size: 18px; line-height: 1.75; margin: 0 0 14px; }
+  .story p:last-child { margin-bottom: 0; }
+  .todo { color: #a0522d; font-style: italic; }
+  h2 { font-size: 22px; margin: 0 0 12px; color: var(--teal-bright); }
+  .meta { color: var(--muted); margin: 0; font-size: 16px; }
+  .meta b { color: var(--text); font-weight: 600; }
+  p { margin: 0 0 12px; }
+  .poster img {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #e3e9e5;
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .btn {
+    font-family: var(--mono);
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--teal-bright);
+    background: var(--peach);
+  }
+  .btn:hover { background: var(--teal); color: #fff; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  @media (max-width: 760px) {
+    h1 { font-size: 30px; }
+    .card { padding: 20px; }
+    .top { grid-template-columns: 1fr; }
+    .photo img { height: auto; }
+    .story p.text { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="https://ghorbanvirdimaryam.github.io/">← Back to home</a>
+
+  <section class="top">
+    <a class="photo" href="tpdp-2025-photo.jpg" target="_blank" rel="noopener">
+      <img src="tpdp-2025-photo.jpg" alt="Maryam Ghorbanvirdi with her poster at TPDP 2025">
+    </a>
+    <div class="story">
+      <p class="event">June 2–3, 2025 · Google, Mountain View, CA</p>
+      <h1>TPDP 2025</h1>
+      <p class="subtitle">Theory and Practice of Differential Privacy</p>
+      <p class="stamp">My experience</p>
+      <p class="text">In June 2025 I travelled to Mountain View for TPDP 2025, the Theory and Practice of Differential Privacy workshop, hosted at Google. TPDP brings together people who prove results about differential privacy and people who deploy it in real systems, which made it the right place for my work: using differential privacy to protect the timing behavior of real-time systems.</p>
+      <p class="text">The day before the workshop I picked up my printed poster in Mountain View. In the poster session I presented <em>Schedule Indistinguishability: Applying Differential Privacy Models to Protect Runtime Timing Behaviors</em>, joint work with my advisor Sibin Mohan. I explained to the DP community why a scheduler's timing can leak information, and why Gaussian noise under Rényi differential privacy held up better than Laplace noise in our experiments.</p>
+      <p class="todo">[Add a moment, a question someone asked, or something you learned at the workshop.]</p>
+    </div>
+  </section>
+
+  <section class="card poster">
+    <h2>Poster</h2>
+    <a href="tpdp-poster.pdf" target="_blank" rel="noopener">
+      <img src="tpdp-poster.jpg" alt="Poster: Indistinguishability: Differential Privacy to Protect Runtime Behaviors">
+    </a>
+    <div class="links">
+      <a class="btn" href="tpdp-poster.pdf" target="_blank" rel="noopener">Poster PDF</a>
+      <a class="btn" href="tpdp-2025-paper.pdf" target="_blank" rel="noopener">Paper PDF</a>
+      <a class="btn" href="https://tpdp.journalprivacyconfidentiality.org/2025/pdf/ghorbanvirdi.pdf" target="_blank" rel="noopener">Abstract PDF</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>About the work</h2>
+    <ul>
+      <li>Real-time systems are predictable, so an attacker can learn private system state from scheduling patterns.</li>
+      <li>Earlier DP-based scheduling adds Laplace noise, which is not enough against long-term observation.</li>
+      <li>We add Gaussian noise to task inter-arrival times, guided by Rényi differential privacy.</li>
+      <li>Tested in a client-server setting where the attacker can watch timing or inject fake tasks.</li>
+      <li>Result: without noise, fake tasks help the attacker; with Gaussian noise under Rényi DP, that advantage drops sharply.</li>
+    </ul>
+    <p class="meta" style="margin-top: 14px;"><b>Authors:</b> Maryam Ghorbanvirdi, Sibin Mohan · The George Washington University</p>
+  </section>
+
+  <section class="card">
+    <h2>Workshop</h2>
+    <p>The poster appears in the official TPDP 2025 program.</p>
+    <div class="links">
+      <a class="btn" href="https://tpdp.journalprivacyconfidentiality.org/2025/#poster1" target="_blank" rel="noopener">Poster listing</a>
+      <a class="btn" href="https://tpdp.journalprivacyconfidentiality.org/2025/" target="_blank" rel="noopener">TPDP 2025 website</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
